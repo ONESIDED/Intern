@@ -1,0 +1,464 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* ------------------------ Nav and Home Page Start----------------------------------- */
+.full-width-table { 
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+.full-width-table td {
+    /* border: 1px solid #ccc;  */
+    padding: 10px; 
+    text-align: center;
+    font-size: larger;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.photo-row { 
+    height: 560px; /* Adjust as needed */ 
+    position: relative; 
+} 
+
+.photo-row .fixed-photo { 
+    position: relative; 
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+} 
+
+.photo-row img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    opacity: 0.7; 
+    z-index: -1;
+    filter: brightness(50%); /* Darken the image */
+}
+
+.overlay { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */ 
+    z-index: 0; 
+}
+
+#box { 
+    text-align: center; 
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+.body_text_decoration {
+    /* display: inline-block; */
+    /* margin: 100px 500px 0 100px; */
+    text-align: left;
+    color: white;
+}
+
+.contectbox {
+    /* border: 1px solid red; for test the condition */
+    width: 50%;
+    height: 560px;
+    margin-left: 150px;
+    text-align: left;
+}
+
+.but_contact_us {
+    display: inline-block; /* Ensure the button is a block element */
+    text-align: center; /* Align button text to the left */ 
+    margin-top: 20px; 
+    padding: 10px 20px;  /* Adjust padding for size */
+    vertical-align: middle;
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    user-select: none;
+    font-size: 16px;  /* Font size */
+    font-weight: 500;
+    text-transform: uppercase;  /* Text transformation */
+    border: 0 solid transparent;
+    letter-spacing: 1.75px;
+    cursor: pointer;  /* Pointer cursor on hover */
+    transition: background 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.but_contact_us:hover {
+    background-color: #f8f9fac8;
+    text-decoration: none;
+}
+
+/* ------------------------ Nav and Home Page End----------------------------------- */
+
+
+/* ------------------------ Card Block Start----------------------------------- */
+.card_Block {
+    background: white;
+    color: black;
+    font-family: proxima-nova, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 115px;
+}
+
+.card_Block h3 {
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.33;
+    margin-top: 115px;
+    margin-bottom: 115px;
+}
+
+.card_part {
+    /* border: 1px solid red;  */
+    display: flex; /* Use flexbox to arrange cards side by side */ 
+    justify-content: center; /* Add spacing between the cards */ 
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */ 
+    width: 100%; 
+    box-sizing: border-box; 
+    text-align: center;
+    margin: 0 -20px;
+}
+
+.card { 
+    background-color: #fff; 
+    border: 1px solid rgba(0, 0, 0, .125); 
+    border-radius: 0; 
+    flex: 1 1 30%; /* Adjusts the width of each card to be smaller */ 
+    max-width: 500px; /* Sets a maximum width for each card */
+    margin: 10px; 
+    display: flex; 
+    flex-direction: column;
+}
+
+.card img { 
+    width: 100%; 
+    height: auto; 
+} 
+
+.card_body { 
+    padding: 15px; 
+    text-align: center;
+}
+
+.card_title {
+    margin-bottom: .75rem;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 23px;
+    line-height: 1.21;
+    color: #212b36;
+}
+
+.card_text {
+    margin-top: 1rem;
+    font-family: proxima-nova, -apple-system, BlinkMacSystemFont, 
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, 
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-style: normal;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: #000;
+}
+
+.card_body_p2 { 
+    margin-top: 10px; 
+    font-size: 16px; 
+    font-weight: 500; 
+    letter-spacing: .89px; 
+    color: #814ebf;
+}
+/* ------------------------ Card Block End----------------------------------- */
+
+/* ------------------------ rocket1 Start----------------------------------- */
+
+.rocket1, .rocket2, .rocket3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.rocket_table {
+    width: 100%;
+    vertical-align: top;
+    position: relative; 
+}
+
+.rocket1_photo { 
+    position: relative; 
+    display: flex; 
+    align-items: flex-end; 
+    margin: 0 0 250px 150px;
+    width: 75%;
+}
+
+.rocket2_photo {
+    position: relative; 
+    display: flex; 
+    align-items: flex-end; 
+    /* margin: -50px 0 200px 150px; */
+    margin: 0 150px 250px 0;
+    width: 75%;
+}
+
+.rocket1_photo img {
+    width: 100%; 
+}
+
+.rocket2_photo img {
+    width: 100%;
+    margin-left: 350px;
+}
+
+.grey_box { 
+    position: absolute; 
+    bottom: 0; 
+    right: 0; 
+    padding: 50px;
+    color: white;
+    width: 55%;
+    height: 320px;
+    margin-bottom: -100px;
+    background: url(../images/grey_screen.png); 
+    background-size: cover; 
+    z-index: 1;
+}
+
+.rocket2 .grey_box { 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    padding: 50px;
+    color: white;
+    width: 50%;
+    height: 320px;
+    margin-bottom: -100px;
+    margin-left: 150px;
+    /* margin-bottom: 0px; */
+    background: url(../images/grey_screen.png); 
+    background-size: cover; 
+    z-index: 1;
+}
+
+.grey_box h3 {
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+.grey_box p {
+    display: block;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 1.43;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    margin: 0 0 1rem 0;
+    text-align: left;
+}
+
+/* ------------------------ rocket1 End----------------------------------- */
+
+
+
+
+/* ------------------------ callToActionBlock Start----------------------------------- */
+.callToActionBlock {
+    position: relative;
+    width: 100%;
+    padding: 0 17.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 4.5rem 0;
+}
+
+.callToActionBlock h3 {
+    font-family: proxima-nova, sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.33;
+    color: #000;
+    margin: 0;
+    /* text-align: center; */
+}
+
+.btnCallToActionBlock {
+    color: #fff;
+    background: #814ebf;
+    border-color: #814ebf;
+    border-radius: 0;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 20px; 
+    padding: 10px 20px;
+    user-select: none;
+    font-family: proxima-nova, -apple-system, BlinkMacSystemFont, 
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, 
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 0 solid transparent;
+    letter-spacing: 1.75px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btnCallToActionBlock:hover {
+    background-color: #814ebfd6;
+    text-decoration: none;
+}
+/* ------------------------ callToActionBlock End----------------------------------- */
+
+/* ------------------------ testimonial Start----------------------------------- */
+.testimonial {
+    position: relative;
+    width: 100%;
+    padding-right: 17.5px;
+    padding-left: 17.5px;
+    display: flex; /* Use flexbox for centering */ 
+    flex-direction: column; /* Arrange items in a column */ 
+    align-items: center; /* Center items horizontally */ 
+    text-align: center; /* Ensure text is centered */
+    margin: 4.5rem 0;
+}
+
+.testimonial h3 {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.37;
+    color: #212b36;
+    font-family: proxima-nova, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 0;
+    max-width: 700px; /* Adjust the width to control line breaks */
+}
+
+.testimonial p {
+    display: block;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1.75px;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+/* ------------------------ testimonial End----------------------------------- */
+
+
+/* ------------------------ Purple Box Start----------------------------------- */
+.purple_box {
+    /* border: 1px solid red; */
+    background: #814EBF;
+    color: white;
+    width: 100%;
+    align-items: center;
+    /* border-collapse: collapse; */
+    /* height: 250px; */
+}
+
+.purple_box table {
+    padding: 0 0 10px 150px;
+    width: 100%;
+    height: 300px;
+}
+
+.purple_box td {
+    width: 75%;
+}
+
+.purple_box h4 {
+    font-weight: 800;
+    font-size: 38px;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    margin-bottom: -15px; /* Adjust the gap between h4 and p */ 
+}
+
+.purple_box p {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 1.33;
+    margin-top: -5px; /* Adjust the gap between h4 and p */ 
+}
+
+.purple_box button {
+    margin-top: -80px;
+}
+/* ------------------------ Purple Box End----------------------------------- */
+
+/* ------------------------ Footer Start----------------------------------- */
+footer {
+    background: black;
+    color: white;
+    width: 100%;
+    height: 230px; 
+}
+
+.footer-table {
+    /* border: 1px solid red; */
+    width: 100%;
+    padding: 20px 0 30px 150px;
+    /* margin: 20px 0px 0px 0px; */
+    /* margin-left: 150px;
+    margin-top: 20px; */
+}
+
+footer td h6 {
+    opacity: 0.5;
+
+}
+
+footer td a {
+    color: white;
+    font-size: larger;
+}
+/* ------------------------ Footer End----------------------------------- */

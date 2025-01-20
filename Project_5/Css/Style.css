@@ -1,0 +1,882 @@
+/* General */
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+}
+/* body, h1, h2, h3, p, a, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0c0c0c;
+    color: #fff;
+    line-height: 1.6;
+    font-size: 1rem; /* Base font size */
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h2, h3 {
+    font-family: "Rye", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 10%;
+}
+.logo {
+    font-size: 1.5rem; /* 24px equivalent */
+    color: #d0ff00;
+    font-family: "Lilita One", serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    width: 40%;
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+}
+.logo img {
+    width: 3.125rem; /* 50px equivalent */
+    height: 3.125rem; /* 50px equivalent */
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.logo span {
+    font-family: "Rye", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1.5rem; /* 24px equivalent */
+    color: #d0ff00;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+.nav {
+    display: flex;
+    padding: 0% 5%;
+    width: 100%;
+    height: 100%;
+}
+.nav a {
+    margin: 0 0.9375rem; /* 15px equivalent */
+    font-size: 1rem; /* 16px equivalent */
+    color: #fff;
+}
+.sign-in {
+    border: 0.125rem solid #d0ff00; /* 2px equivalent */
+    background-color: black;
+    color: #d0ff00;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem; /* 16px equivalent */
+    /* font-family: "Lilita One", serif; */
+    font-style: normal;
+    width: 45%;
+    height: 3.125rem; /* 50px equivalent */
+    padding: 0.625rem 1.25rem; /* 10px 20px equivalent */
+    font-family: 'Arial', sans-serif;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 10%;
+}
+.hero-content {
+    max-width: 40%;
+    width: 30%;
+}
+.hero-content h1 {
+    font-size: 3.125rem; /* 50px equivalent */
+    margin-bottom: 1.25rem; /* 20px equivalent */
+    color: #fff;
+    font-family: "Rye", serif;
+    font-weight: 400;
+    font-style: normal;  
+    text-transform: uppercase;
+}
+.hero-content p {
+    font-size: 1.125rem; /* 18px equivalent */
+    margin-bottom: 1.25rem; /* 20px equivalent */
+    color: #ccc;
+}
+
+.hero-image {
+    width: 60%;
+    max-width: 60%;
+    background-color: #333;
+    height: 25rem; /* 400px equivalent */
+}
+.hero-image img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+/* Top Product Section */
+.top-product {
+    text-align: center;
+    background-color: #000;
+    padding: 0% 0% 5% 10%;
+}
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    background: #000;
+    gap: 5%;
+}
+.product-card {
+    background-color: #222;
+    width: 45%;
+    text-align: left;
+}
+.top-product h2{
+    margin: 0.625rem 0; /* 10px equivalent */
+    font-size: 2.8125rem; /* 45px equivalent */
+    text-align: start;
+      
+}
+.product-card h3 {
+    margin: 0.625rem 0; /* 10px equivalent */
+    color: #fff;
+    font-family: "Lilita One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem; /* 24px equivalent */
+      
+}
+.product-card p {
+    color: #aaa;
+    font-size: 0.875rem; /* 14px equivalent */
+}
+
+/* Latest Games Section */
+.latest-games {
+    padding-top: 2%;
+    background-color: #000;
+    text-align: center;
+    font-size: 2.1875rem; /* 35px equivalent */
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    gap: 1.25rem; /* 20px equivalent */
+    margin-top: 1.25rem; /* 20px equivalent */
+    margin-bottom: 3%;
+}
+.game-card {
+    background-color: #222;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.game-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.latest-games button {
+    padding: 0.625rem 1.25rem; /* 10px 20px equivalent */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #000;
+    font-family: 'Arial', sans-serif;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-transform: uppercase;
+    width: 15%;
+    height: 3.125rem; /* 50px equivalent */
+}
+
+/* Top Product Alternative */
+.top-product-alt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3.125rem; /* 50px equivalent */
+    background-color: #000;
+}
+
+.product-card-alt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    background-color: #000;
+    padding: 1.25rem; /* 20px equivalent */
+    border-radius: 10px;
+}
+
+.product-card-alt h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 1.875rem; /* 30px equivalent */
+    margin-bottom: 1.25rem; /* 20px equivalent */
+    position: relative;
+    left: 100px;
+    top: 25px;
+}
+
+.product-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.product-image-alt {
+    position: relative;
+    width: 15.625rem; /* 250px equivalent */
+    height: 18.75rem; /* 300px equivalent */
+}
+
+.product-image-alt .img-primary {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    border: 0.125rem solid #fff; /* 2px equivalent */
+    border-radius: 8px;
+}
+
+.product-image-alt .img-secondary {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 90%;
+    height: auto;
+    z-index: 1;
+    opacity: 0.8;
+    border: 0.125rem solid #fff; /* 2px equivalent */
+    border-radius: 8px;
+}
+
+.product-details {
+    flex: 1;
+    color: #ccc;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    font-size: 1rem; /* 16px equivalent */
+}
+
+.product-details p, .newsletter_fixed p {
+    margin: 1rem 0; /* 20px equivalent */
+    text-align: justify;
+    text-indent: 2em;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+.buttons .btn,
+.sign-in {
+    padding: 0.625rem 1.25rem; /* 10px 20px equivalent */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #000;
+    font-family: 'Arial', sans-serif;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 45%;
+    height: 3.125rem; /* 50px equivalent */
+}
+
+.buttons .btn {
+    background-color: #c3ff00;
+    text-transform: uppercase;
+}
+
+.sign-in {
+    background-color: transparent;
+    color: #c3ff00;
+    border: 2px solid #c3ff00;
+}
+
+.buttons .btn:hover,
+.sign-in:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.buttons .btn:hover {
+    background-color: #eaff33;
+}
+
+.sign-in:hover {
+    background-color: #c3ff00;
+    color: #000;
+}
+
+/* Footer */
+.footer {
+    position: relative; 
+    width: 100%; 
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0.75)
+    ), url('../Images/footer_Cover.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 5% 10%;
+    color: #ccc;
+    font-family: 'Arial', sans-serif;
+    z-index: 1;
+    overflow: hidden;
+    font-size: 0.875rem; /* 14px equivalent */
+}
+
+.footer::before {
+    content: ''; /* Create an overlay element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%; /* Cover only half the footer */
+    background: rgba(0, 0, 0, 0.75); /* Black overlay with reduced opacity */
+    z-index: 0; /* Place it behind the content */
+}
+
+.footer > * {
+    position: relative; 
+    z-index: 2;
+}
+
+/* Newsletter */
+.newsletter {
+    position: relative;
+    width: 80%;
+    background-color: #d0ff00;
+    color: #000;
+    text-align: center;
+    padding: 3.125rem; /* 50px equivalent */
+    margin: 0 auto 10% auto;
+    overflow: hidden;
+    z-index: 2;
+    top: 0px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.newsletter-signup {
+    margin-top: 15px;
+    background: black;
+    height: 5rem; /* 80px equivalent */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.newsletter_fixed {
+    width: 100%;
+}
+.newsletter_fixed p {
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.newsletter-signup input {
+    padding: 0.625rem; /* 10px equivalent */
+    font-size: 1rem; /* 16px equivalent */
+    border: none;
+    color: white;
+    background-color: black;
+    width: 60%;
+}
+.newsletter-signup input::placeholder {
+    color: white;
+    opacity: 0.7;
+    font-size: 1rem; /* 16px equivalent */
+}
+.newsletter-signup .btn {
+    padding: 0.625rem 1.25rem; /* 10px 20px equivalent */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #000;
+    font-family: 'Arial', sans-serif;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: #c3ff00;
+    text-transform: uppercase;
+    width: 30%;
+    height: 3.125rem; /* 50px equivalent */
+    font-size: 1rem; /* 16px equivalent */
+}
+
+.btn {
+    padding: 0.625rem 1.25rem; /* 10px 20px equivalent */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #000;
+    font-family: 'Arial', sans-serif;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: #c3ff00;
+    text-transform: uppercase;
+    width: 30%;
+    height: 3.125rem; /* 50px equivalent */
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #eaff33;
+}
+
+hr {
+    margin-bottom: 50px;
+}
+
+.footer-brand {
+    display: flex;
+    justify-content: space-between; /* Align logo and info list side by side */
+    align-items: flex-start; /* Align items at the top */
+    gap: 30px; /* Add spacing between logo and info */
+    width: 100%;
+}
+
+.brand_fixed {
+    display: flex;
+    flex-direction: column; /* Ensure logo and description stack vertically */
+    gap: 20px;
+    width: 35%; /* Take 35% of the width for the brand section */
+}
+
+.footer-links {
+    display: flex;
+    flex: 2;
+    justify-content: space-around;
+    width: 55%;;
+    height: auto;
+}
+
+.footer-brand p {
+    font-size: 0.875rem; /* 14px equivalent */
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    width: 40%;
+    height: 30px;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footer-socials a img {
+    width: 100%;
+    flex-direction: space-between;
+    height: 1.875rem; /* 30px equivalent */
+}
+
+.footer-socials a img:hover {
+    transform: scale(1.2);
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.column h3 {
+    font-size: 1.125rem; /* 18px equivalent */
+    color: #fff;
+    margin-bottom: 10px;
+    font-family: initial;
+}
+
+.column a {
+    font-size: 0.875rem; /* 14px equivalent */
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.column a:hover {
+    color: #fff;
+}
+
+/* Responsive Design */
+/* @media (max-width: 1023px) and (min-width: 769px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5% 5%;
+    }
+    .nav {
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav a {
+        margin: 10px 0;
+    }
+    .hero {
+        flex-direction: column;
+    }
+    .hero-content {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    .hero-content h1 {
+        font-size: 2.25rem; 
+    }
+    .hero-content p {
+        font-size: 1rem; 
+    }
+    .hero-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-card {
+        width: 80%;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .games-grid {
+        grid-template-columns: 1fr;
+    }
+    .footer-brand {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .newsletter-signup input {
+        font-size: 0.875rem; 
+    }
+    .newsletter-signup input::placeholder {
+        font-size: 0.875rem; 
+    }
+    .newsletter-signup .btn {
+        font-size: 0.875rem; 
+    }
+} */
+
+@media (max-width: 1023px) and (min-width: 481px) {
+    /* general */
+    .header, .hero, .top-product, .latest-games, .top-product-alt, .footer {
+        padding: 3%;
+    }
+
+    /* hero */
+    .hero-content {
+        max-width: 40%;
+        width: 40%;
+        height: auto;
+    }
+    .hero-content h1 {
+        font-size: 2.1rem; /* 28px equivalent */
+    }
+    .hero-content p {
+        font-size: 0.875rem; /* 14px equivalent */
+    }
+
+    /* top product */
+    .top-product h2 {
+        font-size: 2.1rem; /* 28px equivalent */
+        margin: 0;
+    }
+    .product-card {
+        width: 100%;
+    }
+    .product-container {
+        flex-wrap: unset;
+        gap: 4%;
+    }
+
+    /* latest-games */
+    .latest-games h2 {
+        font-size: 2.1rem; /* 28px equivalent */
+    }
+    .latest-games button {
+        width: 25%;
+    }
+
+    /* top-product-alt */
+    .product-card-alt {
+        max-width: 100%;
+        width: 80%;
+    }
+    .product-card-alt h2 {
+        font-size: 1.55rem; /* 30px equivalent */
+    }
+    .product-image-alt {
+        height: 12.75rem;
+    }
+
+    /* footer */
+    .footer, .footer-links {
+        width: 100%;
+    }
+    .newsletter-signup {
+        height: auto;
+        padding: 1%;
+    }
+    .newsletter-signup input {
+        width: 65%;
+        font-size: 0.875rem; /* 14px equivalent */
+        padding: 0% 3%;
+    }
+    .newsletter-signup input::placeholder {
+        font-size: 0.875rem; /* 14px equivalent */
+    }
+    .newsletter-signup .btn {
+        width: 40%;
+        font-size: 0.875rem; /* 14px equivalent */
+        padding: 3% 0%;
+    }
+}
+
+@media (max-width: 540px) and (min-width: 481px) {
+    .header {
+        justify-content: center;
+        padding: 0;
+    }
+    .nav, header .sign-in  {
+        display: none;
+    }
+    .log {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .product-card-alt h2 {
+        text-align: initial;
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) and (min-width: 344px) {
+    /* header */
+    .header {
+        justify-content: center;
+        padding: 0;
+    }
+    .nav, header .sign-in  {
+        display: none;
+    }
+    .log {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* hero */
+    .hero {
+        display: block;
+    }
+    .hero-content { 
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        height: auto;
+        padding-bottom: 10%;
+    }
+    .hero-content h1 {
+        font-size: 1.75rem; /* 28px equivalent */
+    } 
+    .hero-content p {
+        font-size: 0.875rem; /* 14px equivalent */
+    }
+    .hero-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        background: #000;
+    }
+
+    /* top product */
+    .top-product {
+        padding: 0;
+    }
+    .top-product h2{
+        font-size: 1.75rem;
+        text-align: center;
+    }
+    .product-card {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    /* latest-games */
+    .latest-games h2 {
+        font-size: 1.75rem;
+    }
+    .games-grid {
+        grid-template-columns: 1fr;
+    }
+    .latest-games button {
+        width: 30%;
+        height: 3.125rem; /* 50px equivalent */
+    }
+
+    /* top-product-alt */
+    .top-product-alt {
+        padding: 0;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .product-card-alt h2 {
+        font-size: 1.5rem; /* 24px equivalent */
+        position: static;
+    }
+    .product-card-alt {
+        width: 100%;
+        max-width: 100%;
+        background-color: #000;
+        padding: 0;
+        border-radius: 0;
+    }
+    .product-content {
+        flex-direction: column;
+    }
+    .product-image-alt {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+    .product-image-alt .img-primary, .product-image-alt .img-secondary {
+        position: static;
+        width: 100%;
+        height: auto;
+        border: 0;
+        border-radius: 8px;
+        margin-bottom: 3%;
+    }
+    .product-details {
+        padding: 5%;
+    }
+    .product-details .buttons {
+        justify-content: space-between;
+    }
+
+    /* footer */
+    .newsletter {
+        width: 100%;
+        height: auto;
+        padding: 5%;
+    }
+    .newsletter_fixed h2 {
+        font-size: 1.1rem;
+    }
+    .newsletter_fixed, .brand_fixed, .footer-links{
+        width: 100%;
+        height: auto;
+    }
+    .newsletter-signup {
+        width: 100%;
+        height: auto;
+        padding: 1%;
+    }
+    .newsletter-signup input {
+        width: 65%;
+        font-size: 0.55rem; /* 12px equivalent */
+        padding: 0% 3%;
+    }
+    .newsletter-signup input::placeholder {
+        font-size: 0.55rem; /* 12px equivalent */
+    }
+    .newsletter_fixed p {
+        font-size: 0.65rem; /* 12px equivalent */
+    }
+    .newsletter-signup .btn {
+        width: 40%;
+        font-size: 0.65rem; /* 12px equivalent */
+        height: auto;
+        border-radius: 0;
+        padding: 3% 0%;
+    }
+
+    /* footer-brand */
+    .footer-brand {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-socials {
+        width: 25%;
+    }
+}
+
+
+/* @media (min-width: 700px) {
+    .top-product-alt {
+        padding: 3.125rem 0; 
+    }
+    .product-card-alt h2 {
+        font-size: 1.5rem; 
+    }
+    .product-image-alt {
+        height: 18.75rem; 
+    }
+    .product-image-alt .img-primary {
+        border: 0.125rem solid #fff; 
+    }
+    .product-image-alt .img-secondary {
+        border: 0.125rem solid #fff; 
+    }
+    .product-details {
+        font-size: 0.875rem; 
+    }
+    .buttons .btn,
+    .sign-in {
+        font-size: 0.875rem; 
+        width: 100%;
+    }
+} */
